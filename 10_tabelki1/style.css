@@ -1,8 +1,15 @@
 table{
 	border-collapse:collapse;
+	background-color: GoldenRod;
+	color: purple;
 }
 
 td{
-	border: 1px solid black;
+	border: 3px solid red;
+	padding: 10px;
+}
+
+th{
+	border: 3px solid blue;
 	padding: 10px;
 }
