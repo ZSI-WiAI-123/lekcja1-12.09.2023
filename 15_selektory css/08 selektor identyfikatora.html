@@ -5,27 +5,29 @@
  <meta charset="UTF-8" />
  <title> Selektor uniwersalny </title>
  <style>
-	div+p {
+	#success {
+		color: mediumspringgreen;
+	}
+	div#error{
 		background-color: yellow;
 	}
 
  </style>
 </head>
 <body>
-	<p>Wiadomść od nadawcy</p>
-	<div>
+	<div id="error">
 		<p>The</p>
 		<p><q>Land</q></p>
-		<article><p>Between</p></article>
+		<article><p id="success">Between</p></article>
 	</div>
 
 	<p><u>Solar</u></p>
-	<p>Systems</p>
+	<p class="warning">Systems</p>
 	
 	<div>
 		hej
 	</div>
 	
-	<p>Between</p>
+	<p id="nieMaTakiego">Between2</p>
 	<p>Among</p>
 </html>
