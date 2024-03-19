@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+</head>
+
+	<style>	
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		
+		td {
+			border: 1px solid lightgray;
+			padding: 15px;
+		}
+
+		.n {
+			text-align: right;
+		}
+		
+		span {
+			color: red;
+		}
+		
+	</style>
+
+<body>
+
+	<table>
+		<form>
+		<tr>
+			<td class="n">Imie:<span>*<span></td>
+			<td>
+				<input type="text" required type="text">
+			</td>
+			<td class="n">Nazwisko:<span>*<span></td>
+			<td> 
+				<input type="text" required type="text">
+			</td>
+			<td class="n">Miejsce urodzenia:<span>*<span></td>
+			<td>
+				<input type="text" required type="text">
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td class="n">Drugie imie:<span>*<span></td>
+			<td> 
+				<input type="text" required type="text">
+			</td>
+			<td class="n">Data urodzenia:<span>*<span></td>
+			<td> 
+				<input type="date" required type="date">
+			</td>
+			<td class="n">Województwo urodzenia:<span>*<span></td>
+			<td> 
+				<select>
+					<option selected value=""></option>
+					<option value="Świętokrzyskie">Świętokrzyskie</option>
+					<option value="Dolnośląskie">Dolnośląskie</option>
+					<option value="Kujawsko-pomorskie">Kujawsko-pomorskie</option>
+					<option value="Lubelskie">Lubelskie</option>
+					<option value="Lubuskie">Lubuskie</option>
+					<option value="Łódzkie">Łódzkie</option>
+					<option value="Małopolskie">Małopolskie</option>
+					<option value="Mazowieckie">Mazowieckie</option>
+					<option value="Opolskie">Opolskie</option>
+					<option value="Podkarpackie">Podkarpackie</option>
+					<option value="Podlaskie">Podlaskie</option>
+					<option value="Pomorskie">Pomorskie</option>
+					<option value="Śląskie">Śląskie</option>
+					<option value="Warmińsko-mazurskie">Warmińsko-mazurskie</option>
+					<option value="Wielkopolskie">Wielkopolskie</option>
+					<option value="Zachodniopomorskie">Zachodniopomorskie</option>
+				</select>
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td colspan="6" style="text-align: center">
+				<input name="guzik" type="submit" value="Wyślij">
+			</td>
+		</tr>
+
+		<form>
+	</table>
+
+</body>
+</html>
