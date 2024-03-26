@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+</head>
+
+<body>
+
+	<form action="akcja1.html">
+	
+		<fieldset style="width: 300px; padding: 20px; margin:auto;">
+			<legend> dataList </legend>
+			
+			<label for="browser_name">browser name: </label>
+			<input list="browsers" name="browser_name" id="browser_name" required>
+				<datalist id="browsers">
+					<option value="Internet Explorer">
+					<option value="Firefox">
+					<option value="Chrome">
+					<option value="Opera">
+					<option value="Safari">
+				</datalist>
+			</input>
+			
+			<br/>
+			<br/>
+			<input name="guzik" type="submit" value="Wyślij">
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>
