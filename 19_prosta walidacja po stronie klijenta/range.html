@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+</head>
+
+<body>
+
+	<form action="walidacja.html">
+	
+		<fieldset style="width: 300px; padding: 20px; margin:auto;">
+			<legend> range </legend>
+			
+			<label for="range">numer: </label>
+			<input name="range" type="range" id="range" min="0" max="100" oninput="this.nextElementSibling.value = this.value" value="50"step="1"></input>
+			<output>50</output>
+			
+			<br/>
+			<br/>
+			<input name="guzik" type="submit" value="Wyślij">
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>

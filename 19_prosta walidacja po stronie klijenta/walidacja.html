@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+</head>
+
+<body>
+
+	<form action="akcja.html">
+	
+		<fieldset style="width: 300px; padding: 20px; margin:auto;">
+			<legend> walidacja po stronie klijenta </legend>
+			
+			<label for="tel">tel: </label>
+			<input name="tel" type="tel" id="tel" placeholder="123-123-123" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></input>
+			
+			<br/>
+			<br/>
+			
+			<label for="quantity">number: </label>
+			<input name="quantity" type="number" id="quantity" min="-50" max="0" step="5" placeholder="0"></input>
+			
+			<br/>
+			<br/>
+			
+			<label for="url">url: </label>
+			<input name="url" type="url" id="url" placeholder="https://google.com" required></input>
+			
+			<br/>
+			<br/>
+			
+			<label for="email">email: </label>
+			<input name="email" type="email" id="email" required-type="email" placeholder="egzample@gmail.com" required></input>
+			
+			<br/>
+			<br/>
+			<input name="guzik" type="submit" value="Wyślij">
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>
