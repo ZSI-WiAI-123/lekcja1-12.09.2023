@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title> Tabelka - godziny </title>
+ <link rel="icon" href="https://link-do-loga-strony/">
+ <style>
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+	td {
+		border-left: 3px solid blueviolet;
+		padding: 10px 20px 10px 20px;
+	}
+</style>
+</head>
+<body>
+
+<table>
+
+<form>
+
+	<tr>
+		<td>
+		<label for="marka">Marka:<em style="color: red">*</em></label>
+		<input type="text" name="marka" id="marka" required>
+		</td>
+		<td rowspan="2">
+		<label for="nadwozie">Typ nadwozia:<em style="color: red">*</em></label>
+		<select id="nadwozie" name="nadwozie" multiple size=5>
+			<option value="coupe">coupe</option>
+			<option value="hatchback">hatchback</option>
+			<option value="kabriolet">kabriolet</option>
+			<option value="kombi">kombi</option>
+			<option value="sedan">sedan</option>
+		</select>
+		</td>
+		<td><label for="data">Miesiąc i rok producji:</label>
+		<input type="month">
+		</td>
+		<td>
+		<label for="przebieg">Przebieg:</label>
+		<input type="range" name="przebieg" min=25000 max=250000 step=25000 oninput="this.nextElementSibling.value = this.value">
+		<output>25000</output>
+		</td>
+		<td rowspan="2">
+		<input type="Submit" name="guzik" Value="Szukaj">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<label for="model">Model:</label>
+		<input type="text" name="model" id="model">
+		</td>
+		<td>
+		<label for="paliwo">Rodzaj paliwa</label>
+		<select id="paliwo" name="paliwo">
+			<option value="benzyna">benzyna</option>
+			<option value="benzyna + elektryk">benzyna + elektryk</option>
+			<option value="benzyna + gaz">benzyna + gaz</option>
+			<option value="elektryk">elektryk</option>
+			<option value="diesel">diesel</option>
+		</select>
+		</td>
+		<td>
+		<label for="cena">Cena do:</label>
+		<input type="range" name="cena" min=2000 max=500000 step=1000 oninput="this.nextElementSibling.value = this.value">
+		<output>2000</output>
+		</td>
+	</tr>
+	
+	</form>
+	
+</table>
+
+</body>
+</html>
