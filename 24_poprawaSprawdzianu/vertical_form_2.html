@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title> Tabelka - godziny </title>
+ <link rel="icon" href="https://link-do-loga-strony/">
+
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+            font-family: Calibri;
+            font-size: large;
+        }
+        input, select {
+            background-color: palegoldenrod;
+            border: 2px solid darkgoldenrod;
+            border-radius: 15px;
+            font-size: medium;
+            padding: 3px 8px 3px 8px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <form>
+        <label for="title">Tytół<em style="color: red;">*</em>:</label> <br>
+        <input type="text" name="title" id="title"><br>
+        
+        <br>
+        <legend> Jakość:</legend>
+        <input id="niska" name="language" id="niska" type="checkbox" value="niska" checked>
+        <label for="niska">niska</label>
+        <br>
+        <input id="DVD" name="DVD" id="DVD" type="checkbox" value="DVD">
+        <label for="DVD">DVD</label>
+        <br>
+        <input id="HD" name="HD" id="HD" type="checkbox" value="HD">
+        <label for="HD">HD</label>
+        <br>
+        <input id="UHD" name="UHD" id="UHD" type="checkbox" value="UHD">
+        <label for="UHD">UHD</label> <br>
+
+
+        <br>
+        <legend>Długość:</legend>
+        <input id="dowolna" name="dlugosc" type="radio" value="dowolna" checked>
+        <label for="dowolna">dowolna</label><br>
+        <input id="20min" name="dlugosc" type="radio" value="20min">
+        <label for="20min">do 20 min.</label><br>
+        <input id="90min" name="dlugosc" type="radio" value="90min">
+        <label for="90min">do 90 min.</label><br>
+        <input id="w90min" name="dlugosc" type="radio" value="wiecejNiz90MIN">
+        <label for="w90min">powyżej 90 min.</label><br>
+
+
+        <br>
+        <legend>Rodzaj:</legend>
+        <select id="rodzaj" name="rodzaj">
+            <optgroup label="TV">
+                <option value="seriale">seriale</option>
+                <option value="widowiska">widowiska</option>
+                <option value="bajki">bajki</option>
+            </optgroup>
+            <optgroup label="kino">
+                <option value="animowane">animowane</option>
+                <option value="biograficzne">biograficzne</option>
+                <option value="familijne">familijne</option>
+                <option value="komedia">komedia</option>
+                <option value="sensacyjne">sensacyjne</option>
+                <option value="thrillery">thrillery</option>
+            </optgroup>
+            <optgroup label="inne">
+                <option value="śmieszne">śmieszne</option>
+                <option value="teledyski">teledyski</option>
+                <option value="wywiady">wywiady</option>
+            </optgroup>
+        </select>
+        
+        <br><br>
+        <input type="submit" value="Szukaj">
+    </form>
+
+</body>
+</html>
