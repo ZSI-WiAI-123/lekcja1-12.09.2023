@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title>zadanie</title>
+ <link rel="icon" href="https://link-do-loga-strony/">
+
+    <style>
+        figure {
+            width: 180px;
+            height: 180px;
+            border: solid #ccc;
+            margin: 5px;
+            float: left;
+        }
+        img {
+            height: auto;
+            width: 100%;
+        }
+        figcaption {
+            font-size: small;
+            padding: 15px;
+            text-align: center;
+        }
+        body {
+            font-family: Verdana;
+        }
+        figure:hover {
+            border-color: #777;
+            background-color: aliceblue;
+        }
+    </style>
+
+</head>
+<body>
+
+    <figure>
+        <img src="assets/beach_600x400.jpg" alt="PLAŻA" usemap="#beachMAP">
+        <figcaption>Obraz 1 - plaża w Juracie</figcaption>
+        <map name="beachMAP">
+            <area shape="rect" coords="0, 0, 180, 180" href="assets/beach_3936x2624.jpg">
+        </map>
+    </figure>
+
+    <figure>
+        <img src="assets/forest_600x400.jpg" alt="LAS" usemap="#forestMAP">
+        <figcaption>Obraz 2 - Lan Fangorn</figcaption>
+        <map name="forestMAP">
+            <area shape="rect" coords="0, 0, 180, 180" href="assets/forest_5487x8192.jpg">
+        </map>
+    </figure>
+    
+    <figure>
+        <img src="assets/mountain_600x400.jpg" alt="GÓRA" usemap="#mountainMAP">
+        <figcaption>Obraz 3 - Góra przeznaczenia</figcaption>
+        <map name="mountainMAP">
+            <area shape="rect" coords="0, 0, 180, 180" href="assets/mountain_6000x4000.jpg">
+        </map>
+    </figure>
+    
+    <figure>
+        <img src="assets/space_600x400.jpg" alt="MOON" usemap="#moonMAP">
+        <figcaption>Obraz 4 - Lens Amstrong</figcaption>
+        <map name="moonMAP">
+            <area shape="rect" coords="0, 0, 180, 180" href="assets/space_2700x2700.jpg">
+        </map>
+    </figure>
+</body>
+</html>
